@@ -1,0 +1,35 @@
+" Plugins and modeline
+filetype plugin on
+filetype indent on
+set modeline
+
+" GUI
+set number
+set showtabline=2	" Always show tabline
+
+" More useful completion
+set wildmenu
+set wildmode=list:longest
+
+" Centralize temporary files
+set backupdir=~/.cache/vim//
+set directory=~/.cache/vim//
+
+" Extended block matching
+runtime macros/matchit.vim
+
+set scrolloff=2
+set history=100
+
+" Less verbose short messages
+set shortmess=I
+
+" Mouse scrolling in screen
+if has("mouse") && &term == "screen"
+  set ttymouse=xterm2
+endif
+
+" Filetypes
+au Filetype vim set expandtab shiftwidth=2 softtabstop=2
+au Filetype python set expandtab shiftwidth=4 softtabstop=4
+au Filetype tex set spell

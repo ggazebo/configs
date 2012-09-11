@@ -1,0 +1,5 @@
+" No menu bar, tool bart'
+set guioptions-=T
+set go-=t
+set go-=m
+set go+=c
