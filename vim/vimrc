@@ -52,6 +52,12 @@ if (has("win32") || has("win64"))
   set backupcopy=yes
 endif
 
+" Attach vimfiles
+let &runtimepath = expand("<sfile>:h") . "/vimfiles," . &runtimepath
+
+" Enable Pathogen
+call pathogen#infect()
+
 " =====================================
 " Filetypes
 " =====================================
