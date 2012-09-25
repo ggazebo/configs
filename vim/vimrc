@@ -53,7 +53,7 @@ if (has("win32") || has("win64"))
 endif
 
 " Attach vimfiles
-let &runtimepath = expand("<sfile>:h") . "/vimfiles," . &runtimepath
+let &runtimepath = expand("<sfile>:h") . "," . &runtimepath
 
 " Enable Pathogen
 call pathogen#infect()
